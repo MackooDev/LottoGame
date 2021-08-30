@@ -32,7 +32,7 @@ public class LottoGame implements Game {
 
     private GameResultInfo getHitNumbers() {
         final Set<Integer> inputNumbers = lottoInputReceiver.getSixNumbers(scanner);
-        final Set<Integer> randomNumbers = randomGenerator.getRandomSixNubers();
+        final Set<Integer> randomNumbers = randomGenerator.getRandomSixNumbers();
         return lottoHitNumberCalculator.getHitNumbers(inputNumbers, randomNumbers);
     }
 
